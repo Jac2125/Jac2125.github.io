@@ -17,6 +17,11 @@ header {
     text-align: center;
 }
 
+td, th {
+    border: 1px solid #ccc;
+    /* border-width border-style border-color */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -43,6 +48,7 @@ main {
 
 .welcome-section {
     display: flex;
+    flex-direction: horizontal;
     width: 100%;
     max-width: 1200px;
 }
@@ -119,6 +125,44 @@ h2, h3 {
 .post a {
     color: #0066cc;
     text-decoration: none;
+}
+
+.posts .post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    display: flex;
+    align-items: center;
+}
+
+.post-image {
+    width: 50%;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.post-text {
+    flex: 1;
+}
+
+.post-text p {
+    margin: 0 0 10px;
+}
+
+.post-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.post-text a:hover {
+    background-color: #0056b3;
 }
 
 .post a:hover {
