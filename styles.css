@@ -1,0 +1,136 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.image-container, .text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-img {
+    max-width: 100%; /* 이미지가 컨테이너의 너비를 넘지 않도록 설정 */
+    height: 80%; /* 이미지의 높이를 300px로 고정 */
+    border-radius: 8px;
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.math-section {
+    display: flex;
+    flex-direction: column; /* 수직 정렬을 위해 flex-direction을 column으로 설정 */
+    align-items: center; /* 중앙 정렬 */
+}
+
+.math-section h2 {
+    margin-bottom: 20px; /* 헤딩과 포스트들 사이의 간격 */
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;  /* 여러 줄로 포스트를 나눌 수 있도록 함 */
+    gap: 20px;  /* 포스트 간의 간격 */
+}
+
+.post {
+    flex: 1 1 calc(33.333% - 40px);  /* 3개의 포스트를 한 줄에 배치, 간격 포함 */
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.post h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.post p {
+    color: #555;
+}
+
+.post a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
